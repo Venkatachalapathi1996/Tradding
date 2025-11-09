@@ -1,0 +1,16 @@
+{
+    "recommendations": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-python.black-formatter",
+        "batisteo.vscode-django",
+        "kevinrose.vsc-python-indent",
+        "mhutchie.git-graph",
+        "eamodio.gitlens",
+        "ms-python.isort",
+        "ms-python.debugpy",
+        "donjayamanne.python-environment-manager",
+        "wholroyd.jinja",
+        "bierner.markdown-preview-github-styles"
+    ]
+}

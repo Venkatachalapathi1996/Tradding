@@ -1,0 +1,61 @@
+{
+    // Python settings
+    "python.defaultInterpreterPath": "${workspaceFolder}/venv/bin/python",
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.typeCheckingMode": "basic",
+    
+    // Django settings
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.formatting.provider": "black",
+    
+    // Django template files
+    "files.associations": {
+        "**/*.html": "html",
+        "**/templates/**/*.html": "django-html",
+        "**/templates/**/*": "django-txt",
+        "**/requirements{/**,*}.{txt,in}": "pip-requirements"
+    },
+    
+    // Django-specific settings
+    "emmet.includeLanguages": {
+        "django-html": "html"
+    },
+    
+    // Exclude files from search
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/*.pyc": true,
+        "**/.pytest_cache": true
+    },
+    
+    // Auto-save
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
+    
+    // Terminal
+    "terminal.integrated.env.linux": {
+        "DJANGO_SETTINGS_MODULE": "trading_assistant.settings"
+    },
+    "terminal.integrated.env.osx": {
+        "DJANGO_SETTINGS_MODULE": "trading_assistant.settings"
+    },
+    "terminal.integrated.env.windows": {
+        "DJANGO_SETTINGS_MODULE": "trading_assistant.settings"
+    },
+    
+    // Editor settings
+    "editor.formatOnSave": true,
+    "editor.rulers": [88],
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        }
+    },
+    
+    // Git
+    "git.ignoreLimitWarning": true
+}
